@@ -1,22 +1,311 @@
-.intro {
-    width: 360px;
-	height: 474px;
-	padding: 10px;
-	margin: 0 auto;
-	position: relative;
-    &__imagen {
-		width: 360px;
-		position: absolute;
-		img {
-			width: 100%;
-			height: 474px;
-			object-fit: cover;
+@import "variables.less";
+@import "globals.less";
+.carousel-item{
+    position: relative !important;
+    display: inline-block !important;
+}
+/*Aqui empieza el primer carrusel */
+.slideContent{
+	padding: 0;
+	position:absolute;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+	color: @color-claro;
+	width: 100vw;
+    background-color: rgba(33, 37, 41, 0.555);
+    padding-left: 20px ;
+
+		/* parrafos de fundacio , pinita & mas que sonrisas*/
+        /*Fundacion*/
+		p:nth-child(1){
+			font-family: @font-family;
+			color: @color-claro;
+            border-bottom: 2px solid @color-primario;
+			font-size: 2.4rem;
+			font-weight: 300;
+			box-sizing: border-box;
+            text-align: left;
+            margin-bottom: 0;
+            width: 200px;
+
 		}
-	}
-	&__contenido {
-		width: 50%;
-		margin: 0 auto;
-		position: absolute;
-		text-align: left;
-	}
+        /*pinita*/
+		p:nth-child(2){
+			font-family: @font-family;
+			font-size: 6rem;
+            margin-bottom: 0;
+            font-weight: 600;
+            
+		}
+        /*mas que sonrisas*/
+        p:nth-child(3){
+            color: @color-primario;
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 0;
+            
+            
+        }
+            /*link de nuestra dundacion*/
+        &__link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            background-color: @color-primario;
+            border-radius: 20px;
+            padding: 5px 10px;
+         /* etiqueta a */
+         a{
+            text-decoration: none;
+            color: white;
+            padding:▸ 9px 25px;
+            font-size: 16px;
+            font-weight:100;
+            }
+            /* imagen de flecha*/
+            img{
+                width: 25px;
+            }
+
+    
+    }   
+    &__box{
+         h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 0;
+            font-weight: 600;
+            color: @color-claro;
+            align-items: flex-start;
+            text-align: left;
+            font-weight: 350;
+
+             
+	    }
+        img{
+            width: 160px;
+        } 
+
+        a{
+            /*justify-content: center;*/
+           /* align-items: center;*/
+            gap: 5px;
+            margin: 17px 1px;
+            background-color: @color-primario;
+            border-radius: 13px;
+            padding: 3px 10px;  
+
+            text-decoration: none;
+            color: white;
+            font-size:  3rem;
+            font-weight:300;
+        }
+    }
+}
+/*------footer--------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    color: @color-claro;
+    .footer__header{
+        background-color: @color-variacion;
+        width: 100%;
+        &__box{
+            display: grid;
+            color: @color-claro;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto;
+            grid-template-areas: "phone cellphone"
+                                "email email";
+            font-size: @font-family;
+            line-height: 2rem;
+            font-family: @font-family;
+            padding: 20px 10px;
+            margin: 0 auto;
+            &__phone{
+                grid-area: phone;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            &__phone p,
+            &__cellphone p,
+            &__email p{
+                margin-bottom: 0;
+                font-size: 1.6rem;
+                font-family: 'inter';
+                font-weight: 100;
+            }
+
+            &__cellphone{
+                grid-area: cellphone;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            &__email{
+                grid-area: email;
+                display: flex;
+                justify-content: flex-start;
+                padding: 10px 0px;
+                align-items: center;
+            }
+        }
+        
+        &-icon{
+            
+        }
+        &-icon img{
+            width: 30px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+    }
+    .footer__box{
+        &__body{
+            display: flex;
+            flex-direction: column;
+            background-color: @color-obscuro;
+            padding: 30px;
+            align-items: center;
+            &-logo{
+                width: 200px;
+            }
+            &-links{
+                margin: 30px auto;
+                text-align: center;
+
+                h2{
+                    font-weight: @fuente-base1;
+                    font-size: 2rem;
+                }
+                li {
+                    margin: 10px 0;
+                    list-style: none;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        color: @color-claro;
+                        font-weight: @font-family;
+                        font-size: 1.8rem;
+                        }
+                    }
+                }
+                &-address{
+                    text-align: center;
+                    img{
+                        width: 80px;
+                        margin: 20px auto;
+                    }
+                    p{
+                        font-size: 16px;
+                        width: 170px;
+                        text-align: center;
+                        margin: 5px auto;
+                        font-weight: 400;
+                    }
+					/*---------------AQUI--------------*/
+                }
+                &-schedule{
+                    margin: 40px auto;
+                    text-align: center;
+                    h2{
+                        font-weight: 400;
+                        font-size: 2rem;
+                    }
+                    &-hours{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-areas: "semana horario-semana"
+                                             "sabado horario-sabado"
+                                             "domingo horario-domingo";
+                        font-size: 1.5rem;
+                        p:nth-child(1){
+                            grid-area: semana;
+                            margin: 0 10px;
+                            text-align: right;
+                        }
+                        p:nth-child(2){
+                            grid-area: horario-semana;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        p:nth-child(3){
+                            grid-area: sabado;
+                            margin: 0 10px;
+                            text-align: right;
+                        }
+                        p:nth-child(4){
+                            grid-area: horario-sabado;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                        p:nth-child(5){
+                            grid-area: domingo;
+                            margin: 0 10px;
+                            text-align: right;
+                        }
+                        p:nth-child(6){
+                            grid-area: horario-domingo;
+                            margin: 0 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+                &-socialmedia{
+                    text-align: center;
+                    #logoFooter{
+                        display: none;
+                    }
+                    &__icon{
+                        img{
+                            width: 60px; 
+                         }
+                    }
+                  
+                }
+            
+        }
+    }   
+    .footer__foot{
+        background-color: @color-primario;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: @color-claro;
+        height: 81px;
+        margin: 0;
+        p{
+            margin: 0;
+        }
+        .divisor{
+            display: none;
+        }
+        .rights{
+            
+            p{
+                font-size: 1.4rem;
+                font-weight: 400;
+                text-align: center;
+                margin: 0;
+                border-bottom: 1px solid @color-claro;
+            }
+        }
+        .link__jmc{
+            a{
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: @color-claro;
+            }
+        }
+    }
+
 }
