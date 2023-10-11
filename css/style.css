@@ -16,12 +16,13 @@ body {
 .carousel-item {
   position: relative !important;
   display: inline-block !important;
+  text-align: center !important;
 }
 /*Aqui empieza el primer carrusel */
 .slideContent {
   padding: 0;
   position: absolute;
-  top: 150px;
+  top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,8 +42,8 @@ body {
   padding-left: 20px ;
   /* parrafos de fundacio , pinita & mas que sonrisas*/
   /*Fundacion*/
-  /*pinita*/
-  /*mas que sonrisas*/
+  /*parrafo de pinita*/
+  /*parrafo de mas que sonrisas*/
   /*link de nuestra dundacion*/
 }
 .slideContent p:nth-child(1) {
@@ -55,7 +56,6 @@ body {
           box-sizing: border-box;
   text-align: left;
   margin-bottom: 0;
-  width: 200px;
 }
 .slideContent p:nth-child(2) {
   font-family: 'Raleway', sans-serif;
@@ -124,6 +124,261 @@ body {
   color: white;
   font-size: 3rem;
   font-weight: 300;
+}
+/*----------------seccion de la pagina principal--------------*/
+.content__section-nuestrafundacion {
+  /*imagen de pinita en hostital*/
+  /*-----parrafo de dos bordes-----------------*/
+  /*estilos de los circulos de los programas*/
+  /*estilos para los blog*/
+}
+.content__section-nuestrafundacion-txt p {
+  width: 195px;
+  color: #474643;
+  font-size: 2rem;
+  font-family: 'Inter', sans-serf;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px;
+  line-height: 1.2;
+  /*espacio entre lineas*/
+}
+.content__section-nuestrafundacion-txt a {
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  font-family: 'League Spartan', sans-serf;
+  font-size: 2rem;
+  font-weight: 750;
+}
+.content__section-nuestrafundacion-txt a img {
+  width: 25px;
+}
+.content__section-nuestrafundacion-motivacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url(../images/Mobile/mobileItemDonacion480x520.jpg);
+  width: 0auto;
+  height: 365px;
+}
+.content__section-nuestrafundacion-motivacion-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  border-radius: 25px 0 0 0;
+  padding: 5px;
+  background-color: rgba(33, 37, 41, 0.555);
+}
+.content__section-nuestrafundacion-motivacion-text p {
+  color: #FFFFFF;
+  font-family: 32px;
+  font-size: 1.8rem;
+  text-align: end;
+}
+.content__section-nuestrafundacion-ayuda p {
+  border-top: 2px solid #fcaf00;
+  border-bottom: 2px solid #fcaf00;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 25px;
+  text-align: center;
+  font-weight: 450;
+}
+.content__section-nuestrafundacion-imgcafe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url(../images/Mobile/mobileItemDonacion2480x520.jpg);
+}
+.content__section-nuestrafundacion-programas p:nth-child(1) {
+  color: #474643;
+  border-bottom: 1px solid #fcaf00;
+  margin-bottom: 0;
+  font-size: 4rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2.5px #8F9090;
+}
+.content__section-nuestrafundacion-programas p:nth-child(2) {
+  color: black;
+  font-size: 2rem;
+  margin: 6px 6px;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+.content__section-nuestrafundacion-circulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__section-nuestrafundacion-circulo #itemProg1 {
+  background-image: url(../images/Mobile/itemsCircle_1-600x600.jpg);
+}
+.content__section-nuestrafundacion-circulo #itemProg2 {
+  background-image: url(../images/Mobile/itemsCircle_2-600x600.jpg);
+}
+.content__section-nuestrafundacion-circulo #itemProg3 {
+  background-image: url(../images/Mobile/itemsCircle_3-600x600.jpg);
+}
+.content__section-nuestrafundacion-circulo #itemProg4 {
+  background-image: url(../images/Mobile/itemsCircle_4-600x600.jpg);
+}
+.content__section-nuestrafundacion-circulo #itemProg5 {
+  background-image: url(../images/Mobile/itemsCircle_5-600x600.jpg);
+}
+.content__section-nuestrafundacion-circulo-item {
+  background-position: center;
+  background-size: cover;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  width: 145px;
+  height: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin: 5px;
+}
+.content__section-nuestrafundacion-circulo-item-txt {
+  background-color: rgba(33, 37, 41, 0.555);
+  width: 145px;
+  height: auto;
+}
+.content__section-nuestrafundacion-circulo-item-txt p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 32px;
+}
+.content__section-nuestrafundacion-circulo-item-txt a {
+  text-decoration: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fcaf00;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+.content__section-nuestrafundacion-circulo-item-txt a img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+}
+.content__section-nuestrafundacion-circulo img {
+  margin: 7px;
+  width: 150px;
+  /* Tamaño de la caja circular */
+  height: auto;
+  /* Tamaño de la caja circular */
+}
+.content__section-nuestrafundacion-blog h1 {
+  color: #474643;
+  padding-bottom: 0;
+  font-size: 4.5rem;
+  line-height: normal;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 0px 1px 2.5px #8F9090;
+}
+.content__section-nuestrafundacion-blog p {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: 450;
+}
+.content__section-nuestrafundacion-blogimg {
+  line-height: 1.5;
+}
+.content__section-nuestrafundacion-blogimg img {
+  width: 380px;
+  /* Ancho de la imagen */
+  height: 200px;
+  /* Altura automática para mantener la proporción original */
+}
+.content__section-nuestrafundacion-blogimg p:nth-child(2) {
+  padding: 5%;
+  font-size: 2rem;
+  color: black;
+  margin: 0px;
+}
+.content__section-nuestrafundacion-blogimg p:nth-child(3) {
+  margin: 0px;
+  padding: 2%;
+  font-size: 2rem;
+  color: black;
+  border-bottom: 1px solid #fcaf00;
+}
+.content__section-nuestrafundacion-blogimg p:nth-child(4) {
+  margin: 0px;
+  padding: 5%;
+  font-size: 2rem;
+  text-align: justify ;
+  color: black;
+  font-family: 32px;
+}
+.content__section-nuestrafundacion-blogimg a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 25px;
+  text-decoration: none;
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  color: black;
+  font-size: 1.8rem;
+}
+.content__section-nuestrafundacion-blogimg a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25px;
+  height: auto;
 }
 /*------footer--------*/
 footer {

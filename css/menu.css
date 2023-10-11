@@ -20,16 +20,16 @@ ul {
   background-color: #ffffff;
   color: #ffffff;
   height: 55px;
+  /*&__logo{
+        max-width: 100px;
+        overflow: hidden;
+        margin: 0 10px;
+    }*/
 }
 .menu-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.menu__logo {
-  max-width: 100px;
-  overflow: hidden;
-  margin: 0 10px;
 }
 .menu__container {
   display: -webkit-box;
@@ -140,11 +140,13 @@ ul {
 }
 .menu__img {
   display: block;
-  width: 24px;
+  width: 36px;
 }
 @media screen and (max-width: 800px) {
-  .menu-top {
-    display: none;
+  .menu {
+    /* &-top{
+            display: none;
+        }*/
   }
   .menu__hamburger {
     display: -webkit-box;
@@ -182,9 +184,9 @@ ul {
     padding: 0;
     bottom: 0;
     right: 0;
-    background: #ffffff;
     background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(53%, #2ca7ec));
     background: linear-gradient(0deg, #ffffff 0%, #2ca7ec 53%);
+    overflow-y: auto;
     display: -ms-grid;
     display: grid;
     grid-auto-rows: -webkit-max-content;
